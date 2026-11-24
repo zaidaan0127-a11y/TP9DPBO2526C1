@@ -1,0 +1,17 @@
+<div class="card">
+  <h2>{{JUDUL_FORM}}</h2>
+  <form method="post" action="index.php">
+    <input type="hidden" name="page" value="kandidat">
+    <input type="hidden" name="action" value="{{AKSI}}">
+    <input type="hidden" name="id" value="{{ID}}">
+    <label>Nama <input type="text" name="nama" value="{{NAMA}}" required></label>
+    <label>Posisi Dilamar <input type="text" name="posisi" value="{{POSISI}}" required></label>
+    <label>Domisili <input type="text" name="domisili" value="{{DOMISILI}}" required></label>
+    <label>Skor Tes (0-100) <input type="number" name="skorTes" min="0" max="100" value="{{SKOR}}" required></label>
+    <label>Pengalaman (tahun) <input type="number" name="pengalamanTahun" min="0" value="{{PENGALAMAN}}" required></label>
+    <div class="form-aksi">
+      <button class="btn" type="submit">Simpan</button>
+      <a class="btn abu" href="index.php?page=kandidat">Batal</a>
+    </div>
+  </form>
+</div>
